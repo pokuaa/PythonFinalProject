@@ -3,6 +3,7 @@
 def grammeToKilogram():
     gramme = eval(input('Enter any  number in grammes: '))
     kilogram = 0.001*gramme
+    # return kilogram to memory
     return kilogram
 
 #takes gramme and converts it to tonnes
@@ -88,9 +89,9 @@ def MetresToKm():
 
 # displays the various units of conversion and allows the user to enter their preferred unit of conversion
 def main():
-    dec='====='*10
+    line='====='*10
     print('Welcome to the Unit Converter Calculator.\nBelow gives a list of unit conversions\Enter the the quantity you want to convert here')
-    print(dec)
+    print(line)
     print()
     print('1. convert from grammes to kilograms\n2. convert from to grammes to tonnes\n3.convert from grammes  to pounds ')
     print('4. convert from ml to litres \n5. convert from litres to ml\n6.convert from litres to cubic_metre')
@@ -98,7 +99,7 @@ def main():
     print('10. convert from cm  to m \n11. convert from miles to ft \n12.convert from ft to miles')
     print('13. convert from km to metres \n14. convert from metres to km')
     print()
-    print(dec)
+    print(line)
 
      
     # ask user for the choice of quantity and converts it to a different unit of the same quantity.

@@ -1,15 +1,17 @@
+#function to convert from gramme to kilograms
+#defining the function
 def grammeToKilogram():
     gramme = eval(input('Enter any  number in grammes: '))
     kilogram = 0.001*gramme
     return kilogram
 
-
+#takes gramme and converts it to tonnes
 def grammeToTonnes():
      gramme = eval(input('Enter any  number in grammes: '))
      tonnes =0.000001 *gramme
      return tonnes
    
-
+#function to convert from gramme to pounds
 def grammeToPounds():
      gramme = eval(input('Enter any  number in grammes: '))
      pounds = 0.0022*gramme
@@ -36,6 +38,7 @@ def LitresToCubic_metre():
 
 def Cubic_metreToLitres():
      Cubic_metre = eval(input('Enter any  number in Cuic_metre: '))
+    #allows user to input value in cubic_metre 
      Litres = 0.001*cubic_metre
      return Litres
 
@@ -52,7 +55,7 @@ def MetresToCm():
      return cm
 
 
-
+#takes cm and converts it to metres
 def CmToMetres():
      cm = eval(input('Enter any  number in cm: '))
      metre = 0.01*cm
@@ -79,10 +82,11 @@ def kmToMetres():
 
 def MetresToKm():
     metre = eval(input('Enter any  number in metre: '))
+#allows user to input value in metres
     km = 0.001*metre
     return km
 
-
+# displays the various units of conversion and allows the user to enter their preferred unit of conversion
 def main():
     dec='====='*10
     print('Welcome to the Unit Converter Calculator.\nBelow gives a list of unit conversions\Enter the the quantity you want to convert here')
@@ -97,9 +101,9 @@ def main():
     print(dec)
 
      
-    
+    # ask user for the choice of quantity and converts it to a different unit of the same quantity.
     choice = input('Enter choice to convert from one unit to another: ')
-    
+#check which function to call per the users choice 
     if choice == '1':
         a=grammeToKilogram()
         print(a,'kg')
@@ -107,7 +111,8 @@ def main():
     elif choice == '2':
         b = grammeToTonnes()
         print(b,'tonnes')
-        
+    
+    
     elif choice == '3':
         c = grammeToPounds()
         print(c,'pounds')
@@ -155,6 +160,7 @@ def main():
         MetresToKm()
         print(d,'metres')
         
+    # checking if the user entered a wrong input   
     else:
         print('Reconsider your input')
         
@@ -165,5 +171,5 @@ def main():
     
     
     
-    
+#calling the main function   
 main()
